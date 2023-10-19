@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <body>
+    <p id="text"></p>
+    <button onclick="addNumber() ">증가</button>
+    <button onclick="subNumber()">감소</button>
+    <script>
+      let count = 0;
+      function addNumber() {
+        count ++;
+        document.querySelector("#text").innerHTML = count;
+      }
+      function subNumber() {
+        count--;
+        document.querySelector('#text').innerHTML=count;
+      }
+    </script>
+</body>
+  
+</html>
